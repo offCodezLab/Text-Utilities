@@ -1,0 +1,32 @@
+.btn {
+    margin: 0px 5px;
+}
+
+.lightDark {
+    background-color: #526D82 !important;
+}
+
+.lightDark:hover {
+    background-color: #5d7a90 !important;
+}
+
+.blueDark {
+    background-color: blue !important;
+}
+
+.blueDark:hover{
+    background-color: #1212dc !important;
+}
+
+.greenDark{
+    background-color: #49796B !important;
+    border: none !important;
+}
+
+.greenDark:hover{
+    background-color: #5e9485 !important;
+}
+
+.color-white {
+    color: white !important;
+}
