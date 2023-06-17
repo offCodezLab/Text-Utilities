@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import "./App.css";
-import About from "./components/About";
+// import About from "./components/About";
 import Navbar from "./components/Navbar";
 import TextForm from "./components/TextForm";
 import Alert from './components/Alert';
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+// import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
 
@@ -90,8 +90,13 @@ function App() {
 
   return (
     <>
-      <Router>
-        <Navbar title="Text Utilities" aboutUs="About" mode={mode} toggleDarkMode={toggleDarkMode} toggleLightDarkMode={toggleLightDarkMode} toggleBlueDarkMode={toggleBlueDarkMode} toggleGreenDarkMode={toggleGreenDarkMode} />
+      <Navbar title="Text Utilities" aboutUs="About" mode={mode} toggleDarkMode={toggleDarkMode} toggleLightDarkMode={toggleLightDarkMode} toggleBlueDarkMode={toggleBlueDarkMode} toggleGreenDarkMode={toggleGreenDarkMode} />
+      <Alert alert={alert} />
+      <div className="container my-3">
+        <TextForm heading="Enter your text below" mode={mode} showAlert={showAlert} />
+      </div>
+      {/* <Router> */}
+      {/* <Navbar title="Text Utilities" aboutUs="About" mode={mode} toggleDarkMode={toggleDarkMode} toggleLightDarkMode={toggleLightDarkMode} toggleBlueDarkMode={toggleBlueDarkMode} toggleGreenDarkMode={toggleGreenDarkMode} />
         <Alert alert={alert} />
         <div className="container my-3">
           <Routes>
@@ -100,8 +105,8 @@ function App() {
             <Route exact path="/" element={<TextForm heading="Enter your text below" mode={mode} showAlert={showAlert} />}>
             </Route>
           </Routes>
-        </div>
-      </Router >
+        </div> */}
+      {/* </Router > */}
 
     </>
   );
