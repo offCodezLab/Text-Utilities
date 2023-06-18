@@ -35,3 +35,20 @@
     background-color: rgb(0, 0, 0, 0.9) !important;
     color: white !important;
 }
+
+.about-lightDark{
+    background-color: gray !important;
+    color: white !important;
+}
+
+
+.about-blueDark{
+    background-color: #0e3057 !important;
+    color: white !important;
+}
+
+
+.about-greenDark{
+    background-color: #045762 !important;
+    color: white !important;
+}
