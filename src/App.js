@@ -4,7 +4,8 @@ import About from "./components/About";
 import Navbar from "./components/Navbar";
 import TextForm from "./components/TextForm";
 import Alert from './components/Alert';
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, useNavigate } from "react-router-dom";
+
 
 function App() {
 
@@ -87,8 +88,15 @@ function App() {
     });
 
   }
+  const Comp = () => {
+    const navigate = useNavigate();
+    const refreshPage = () => {
+      navigate(0);
+    };
+  };
 
   return (
+
     <>
       <Router>
         {<Navbar title="Text Utilities" aboutUs="About" mode={mode} toggleDarkMode={toggleDarkMode} toggleLightDarkMode={toggleLightDarkMode} toggleBlueDarkMode={toggleBlueDarkMode} toggleGreenDarkMode={toggleGreenDarkMode} />}

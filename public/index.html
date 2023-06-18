@@ -7,7 +7,7 @@
     <meta name="theme-color" content="#000000" />
     <metaname
       name="description"
-      content="Text Utilities a web app to perform quick text operations"
+      content="Text Utilities a web app to perform quick text operations. You can count words and chracters using text utilities."
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon.ico" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
@@ -19,6 +19,11 @@
     />
 
     <title>Text Utilities - Home</title>
+    <script>
+      import { useNavigate } from "react-router-dom";
+      const navigate = useNavigate();
+      navigate(0);
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
