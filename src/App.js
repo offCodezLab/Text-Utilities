@@ -88,12 +88,6 @@ function App() {
     });
 
   }
-  const Comp = () => {
-    const navigate = useNavigate();
-    const refreshPage = () => {
-      navigate(0);
-    };
-  };
 
   return (
 
